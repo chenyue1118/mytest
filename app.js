@@ -13,7 +13,7 @@ app.get('/1', (req, res) => {
 app.get('/a', (req, res) =>　{
   request.post({url: 'https://www.bitahub.com/manage/login', form: {
     'email': '1023581658@qq.com',
-    'password': '123456'
+    'password': '###'
   }}, (error, response, body) => {
     if(error) {
       console.log(error);
@@ -41,7 +41,7 @@ app.get('/a', (req, res) =>　{
 app.get('/login', (req, res) => {
   request.post({url: 'https://www.bitahub.com/manage/login', form: {
     'email': '1023581658@qq.com',
-    'password': '123456'
+    'password': '###'
   }}, (error, response, body) => {
     if(error) {
       console.log(error);
@@ -58,9 +58,9 @@ app.get('/login', (req, res) => {
 app.get('/checkLogin', (req, res) => {
   request.post({url: 'http://139.129.203.44:8180/manage/registeUser',form: {
     "email": "1023581658@qq.com",
-    "emailCode": "131007",
+    "emailCode": "###",
     "type": 2,
-    "password": "123456"
+    "password": "###"
   }}, (error, response, body) => {
     if (error) {
       console.log(error);
